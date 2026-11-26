@@ -1,0 +1,12 @@
+{
+  "name": "VK Digital Question Bank",
+  "short_name": "VK Study",
+  "description": "Study PDFs by subject, online or offline.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#101a38",
+  "icons": [
+    {"src":"vk-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

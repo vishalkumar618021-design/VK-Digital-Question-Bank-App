@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#101a38" />
+  <meta name="description" content="VK Digital Question Bank — study PDFs by subject, online or offline." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="vk-icon.svg" type="image/svg+xml" />
+  <title>VK Digital Question Bank</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" id="brandHome" aria-label="Go home">
+        <span class="brand-mark">VK</span>
+        <span class="brand-copy"><strong>VK Study</strong><small>Digital Question Bank</small></span>
+      </button>
+      <div class="top-actions">
+        <span class="status-pill" id="connectionStatus"><i></i> Online</span>
+        <button class="icon-button" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      </div>
+    </header>
+
+    <main id="mainView" class="main-view"></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-page="home"><span>⌂</span><small>Home</small></button>
+      <button class="nav-item" data-page="subjects"><span>▦</span><small>Subjects</small></button>
+      <button class="nav-item" data-page="downloads"><span>↓</span><small>Downloads</small></button>
+      <button class="nav-item" data-page="settings"><span>⚙</span><small>Settings</small></button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
